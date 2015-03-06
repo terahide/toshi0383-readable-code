@@ -28,8 +28,10 @@ public class Recipe {
 			System.out.println("No such file found:" + fileName);
 			return;
 		}
+		
+		int i=0;
 		for (String recipe : getLinesFromFileName(fileName)) {
-			System.out.println(recipe);
+			System.out.println(String.format("%d:%s",i++,recipe));
 		}
 	}
 
