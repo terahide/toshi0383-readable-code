@@ -3,18 +3,18 @@
 *.pydevproject
 .metadata
 .gradle
-bin/
+#bin/
 tmp/
 *.tmp
 *.bak
 *.swp
 *~.nib
 local.properties
-.settings/
+#.settings/
 .loadpath
 
 # Eclipse Core
-.project
+#.project
 
 # External tool builders
 .externalToolBuilders/
@@ -26,7 +26,7 @@ local.properties
 .cproject
 
 # JDT-specific (Eclipse Java Development Tools)
-.classpath
+#.classpath
 
 # PDT-specific
 .buildpath
@@ -40,7 +40,7 @@ local.properties
 
 ### https://raw.github.com/github/gitignore/557c62cd54524fe6f7559cab042d91553bb0755e/java.gitignore
 
-*.class
+#*.class
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
