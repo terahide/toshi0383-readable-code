@@ -12,14 +12,14 @@ import java.util.List;
 public class Recipe {
 	
 	/** 使い方 */
-	private final static String USAGE = "java Recipe [fileName]";
+	private final static String USAGE = "java "+Recipe.class.getName()+" fileName [menuId]";
 
 	/**
 	 * メイン処理
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		if (args == null || args.length == 0) {
+		if (args.length != 1 && args.length != 2) {
 			System.out.println("Usage:" + USAGE);
 			return;
 		}
@@ -29,11 +29,22 @@ public class Recipe {
 			return;
 		}
 		
+		List<String> fileContents = getLinesFromFileName(fileName);
+		print(fileContents);
+		
+//		int menuId = Integer.parseInt(args[1]);
+	}
+	
+	private static void print(List<String> fileContents){
 		int i=0;
-		for (String recipe : getLinesFromFileName(fileName)) {
+		for (String recipe : fileContents) {
+//			if(i != menuId){
+//				continue;
+//			}
 			System.out.println(String.format("%d:%s",i++,recipe));
 		}
 	}
+	
 
 	/**
 	 * 引数のファイル名の中身を１行ずつList にいれて返す
