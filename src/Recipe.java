@@ -11,6 +11,7 @@ import java.util.List;
  */
 public class Recipe {
 	
+	/** 使い方 */
 	private final static String USAGE = "java Recipe [fileName]";
 	/**
 	 * メイン処理
