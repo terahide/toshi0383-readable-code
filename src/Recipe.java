@@ -42,6 +42,7 @@ public class Recipe {
 		}
 	}
 	
+	//FIXME DRYじゃない。FullPrinterとSelectedPrinterがあればよいかも
 	private static void print(List<String> fileContents){
 		int i=0;
 		for (String recipe : fileContents) {
