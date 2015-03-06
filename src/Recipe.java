@@ -48,9 +48,6 @@ public class Recipe {
 			}
 			reader = new FileReader(file);
 			br = new BufferedReader(reader);
-		} catch(IOException e) { return recipes; }
-
-		try {
 			String s;
 			while ((s = br.readLine()) != null) {
 				recipes.add(s);
