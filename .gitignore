@@ -40,7 +40,7 @@ local.properties
 
 ### https://raw.github.com/github/gitignore/557c62cd54524fe6f7559cab042d91553bb0755e/java.gitignore
 
-#*.class
+*.class
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
