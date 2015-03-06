@@ -34,7 +34,7 @@ public class Recipe {
 	/**
 	 * 引数のファイル名の中身を１行ずつList にいれて返す
 	 * @param recipeFileName
-	 * @return
+	 * @return 取り出したデータファイルのリスト
 	 */
 	@SuppressWarnings("resource")
 	public static List<String> getLinesFromFileName(String recipeFileName) {
