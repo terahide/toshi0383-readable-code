@@ -38,28 +38,44 @@ if (!file.exists()) {
 メソッドの中やループの中の早いタイミングでリターン（continue or break）する
 
 ## Javadocコメントが付いている
+https://github.com/terahide/toshi0383-readable-code/blob/master/src/Recipe.java#L70
+仕様が見えやすい
 
 ## インデントが揃っている
+全体的に
+見やすい
 
 ## 一時変数で名前をつけている 
-Line：26 
+https://github.com/terahide/toshi0383-readable-code/blob/master/src/Recipe.java#L26
 
-コード 
+
 String fileName = args[0]; 
+コード args[0]だと意味が分からないだけどfileNameならわかる
+
 
 ##USAGEを定数にしている
-
-
-Line:15
+https://github.com/terahide/toshi0383-readable-code/blob/master/src/Recipe.java#L15
+コンテキスト外の情報を定数にして外に追い出している（コンテクストに集中できる）
 
 ## クラスの名前がRecipe
+https://github.com/terahide/toshi0383-readable-code/blob/master/src/Recipe.java#L12
+役割に対して適切な名前を付けている
 
 ## 変数の名前を１文字にせずに名前を付けている
+https://github.com/terahide/toshi0383-readable-code/blob/master/src/Recipe.java#L72
+役割に対して適切な名前を付けている
 
-e.g. reader （Line:44）
-
-## コメントがない（ノイズが少ない）
+## 不要なコメントがない
+全体
+ノイズが少ない。コードで意図を伝えられている証拠
 
 ## インデントが浅い最大３階層
+全体
+https://github.com/terahide/toshi0383-readable-code/blob/master/src/Recipe.java#L53
 
-## ジェネリクスを使って型をしばる List<String>
+読みやすい
+
+## ジェネリクスを使って型をしばる （Java特有）e.g. List<String>
+https://github.com/terahide/toshi0383-readable-code/blob/master/src/Recipe.java#L71
+Collectionの要素も型安全で意図を伝えやすい
+
