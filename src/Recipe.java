@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * オムライスと出力する
+ * レシピを出力するプログラム
  * @author toshi0383
  */
 public class Recipe {
