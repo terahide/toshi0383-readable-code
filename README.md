@@ -1,3 +1,2 @@
-Readable Code のりぽ
+Readable Code のりぽ(Java)
 ----
-Java
