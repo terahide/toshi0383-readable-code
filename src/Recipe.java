@@ -30,21 +30,35 @@ public class Recipe {
 		}
 		
 		List<String> fileContents = getLinesFromFileName(fileName);
-		print(fileContents);
+		if (args.length == 1) {
+			print(fileContents);
+			return ;
+		}
 		
-//		int menuId = Integer.parseInt(args[1]);
+		if (args.length == 2) {
+			int menuId = Integer.parseInt(args[1]);
+			print(fileContents,menuId);
+			return ;
+		}
 	}
 	
 	private static void print(List<String> fileContents){
 		int i=0;
 		for (String recipe : fileContents) {
-//			if(i != menuId){
-//				continue;
-//			}
 			System.out.println(String.format("%d:%s",i++,recipe));
 		}
 	}
 	
+	private static void print(List<String> fileContents,int menuId){
+		int i=0;
+		for (String recipe : fileContents) {
+			if(i != menuId){
+				i++;
+				continue;
+			}
+			System.out.println(String.format("%d:%s",i++,recipe));
+		}
+	}
 
 	/**
 	 * 引数のファイル名の中身を１行ずつList にいれて返す
