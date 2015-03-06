@@ -13,6 +13,7 @@ public class Recipe {
 	
 	/** 使い方 */
 	private final static String USAGE = "java Recipe [fileName]";
+
 	/**
 	 * メイン処理
 	 * @param args
@@ -31,6 +32,7 @@ public class Recipe {
 			System.out.println(recipe);
 		}
 	}
+
 	/**
 	 * 引数のファイル名の中身を１行ずつList にいれて返す
 	 * @param recipeFileName
